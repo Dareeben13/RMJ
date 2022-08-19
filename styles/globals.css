@@ -7,7 +7,9 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  background-color: #1f2027;
   font-family: "Roboto", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
+  scroll-behavior: smooth;
 }
 
 p,
@@ -30,6 +32,43 @@ a {
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: #1f2027;
+}
+
+button {
+  outline: none !important;
+  border: none !important;
+}
+
+.yuut {
+  position: relative;
+}
+
+.yuut span {
+  display: block !important;
+  border-radius: 0.5rem;
+  max-height: 615px;
+  min-height: 615px;
+}
+
+.black-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1f202745 !important;
+  display: block;
+  z-index: 999 !important;
+}
+
+.yuut:hover .black-overlay {
+  display: none !important;
+  transition: display 0.5s ease-in-out;
+}
+
+.yuut:hover img {
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
 .underlined {
@@ -64,6 +103,10 @@ a {
 
 .text-secondary {
   color: #a9adc1;
+}
+
+.text-primary {
+  color: #fff;
 }
 
 .underlined::after {

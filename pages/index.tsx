@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import AppNav from "../components/app-nav";
+import { BlogExcerpt } from "../components/blogExcerpt";
+import { Footer } from "../components/footer";
 import { LandingPage } from "../components/home";
 import styles from "../styles/Home.module.css";
 
@@ -16,7 +18,10 @@ const Home: NextPage = () => {
       <main className={styles.homeMain}>
         <AppNav />
         <LandingPage />
+        <BlogExcerpt />
+        <div className="h-10 lg:h-12"></div>
       </main>
+      {/* <Footer /> */}
     </div>
   );
 };

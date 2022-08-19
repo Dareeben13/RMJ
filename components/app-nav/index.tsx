@@ -2,16 +2,12 @@ import Link from "next/link";
 
 const ROUTE_INFO = [
   {
-    path: "/",
-    label: "Blog",
+    path: "#articles",
+    label: "Articles",
   },
   {
     path: "/",
     label: "About",
-  },
-  {
-    path: "/",
-    label: `Let's  ${"  "}  Meet`,
   },
   {
     path: "/",

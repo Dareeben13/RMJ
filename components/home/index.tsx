@@ -25,15 +25,14 @@ export const LandingPage = () => {
             <div className="flex flex-auto flex-col">
               <TypeAnimation
                 sequence={["I'm also a big extreme sports enthusiast. When I'm not hanging out with my family or at the computer you can find me bing watching rom-coms or playing video games.", 2000]}
-                speed={5}
+                speed={2}
                 wrapper="h2"
-                repeat={3}
-                cursor={true}
+                repeat={0}
                 className="leading-loose head-h2 text-4xl md:text-4xl text-black dark:text-white"
               />
             </div>
             <div className="hidden pt-12 lg:block">
-              <Link href="/">
+              <Link href="#articles">
                 <a className=" inline-flex items-center text-left font-medium focus:outline-none cursor-pointer transition text-lg">
                   <div className="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
                     <div className="absolute text-gray-200 dark:text-gray-600">
@@ -69,6 +68,7 @@ export const LandingPage = () => {
           </div>
         </div>
       </header>
+      {/* <div className="h-40 lg:h-48"></div> */}
     </div>
   );
 };
